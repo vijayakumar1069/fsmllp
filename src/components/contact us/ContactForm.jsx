@@ -45,7 +45,6 @@ export function ContactForm() {
     useSend();
 
   const onSubmit = async (values) => {
-    console.log(values);
     const result = await sendRequest(() => contactFunction(values));
     console.log(result);
   };

@@ -17,7 +17,6 @@ export async function gettingAccessToken({ ClientId, ClientSecret, TenantID }) {
       error: false,
     };
   } catch (error) {
-    console.log(error);
     return {
       status: 400,
       message: "Error getting access token",
