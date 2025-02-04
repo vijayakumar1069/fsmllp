@@ -14,6 +14,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
+import useSend from "@/app/customhooks/useSend";
+import { contactFunction } from "@/app/actions/contact_us_fun";
 
 const formSchema = z.object({
   name: z
@@ -39,11 +41,14 @@ export function ContactForm() {
     },
     mode: "onChange",
   });
+  const { loading, success, error, sendRequest, setSuccess, setError } =
+    useSend();
 
-  function onSubmit(values) {
-    console.log("Form submitted:", values);
-    // Add your form submission logic here
-  }
+  const onSubmit = async (values) => {
+    console.log(values);
+    const result = await sendRequest(() => contactFunction(values));
+    console.log(result);
+  };
 
   return (
     <div className="max-w-3xl mx-auto p-6 ">
@@ -135,6 +140,17 @@ export function ContactForm() {
               className="-rotate-45 transition-transform group-hover:translate-x-1"
             />
           </Button>
+
+          {success && (
+            <div className="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg">
+              {success}
+            </div>
+          )}
+          {error && (
+            <div className="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg">
+              {error}
+            </div>
+          )}
         </form>
       </Form>
     </div>
