@@ -36,7 +36,7 @@ const ReviewsSection = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
-      className="relative overflow-hidden"
+      className="relative overflow-hidden mt-6"
     >
       <motion.div
         className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8"
@@ -57,19 +57,19 @@ const ReviewsSection = () => {
               transition={{ type: "spring" }}
             >
               <Image
-                src="/r1.jpeg"
+                src="/review_1.jpeg"
                 alt="Customer 1"
                 fill={true}
                 className="object-cover"
                 priority
               />
               {/* Animated Gradient Overlay */}
-              <motion.div
+              {/* <motion.div
                 className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-              />
+              /> */}
             </motion.div>
           </motion.div>
 

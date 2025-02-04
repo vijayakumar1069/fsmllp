@@ -2,6 +2,7 @@ import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GoToTop from "@/components/GoToTop";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -28,7 +29,7 @@ export default function RootLayout({ children }) {
             {/* Increased padding-top */}
             <main>{children}</main>
           </div>
-
+          <GoToTop />
           <footer>
             <Footer />
           </footer>

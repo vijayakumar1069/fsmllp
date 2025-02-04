@@ -9,6 +9,7 @@ import {
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { FaLinkedin, FaPhone } from "react-icons/fa6";
 import { RiWhatsappFill } from "react-icons/ri";
+import { MdCall } from "react-icons/md";
 
 export const navbarValues = [
   {
@@ -62,6 +63,14 @@ export const percentageValues = [
     description: "Charities & Non-Profits Assisted", // Changed to highlight charity work
   },
 ];
+export const Hero_Section_Images = [
+  { id: 1, src: "/home_1.jpeg", alt: "Customer 1" },
+  { id: 2, src: "/home_2.jpeg", alt: "Customer 2" },
+  { id: 3, src: "/home_3.jpeg", alt: "Customer 3" },
+  { id: 4, src: "/home_4.jpeg", alt: "Customer 4" },
+  { id: 5, src: "/home_5.jpeg", alt: "Customer 5" },
+  { id: 6, src: "/home_6.jpeg", alt: "Customer 6" },
+];
 
 export const COMPANY_IMAGES = [
   { id: 1, src: "/r1.jpeg", alt: "Customer 1" },
@@ -69,10 +78,10 @@ export const COMPANY_IMAGES = [
   { id: 3, src: "/r3.jpeg", alt: "Customer 3" },
 ];
 
-export const contnet = [
+export const service_Content = [
   {
     id: 1,
-    img: "/r1.jpeg",
+    img: "/service_1.jpeg",
     title: "Audit",
     colorTitle: "Precision",
     serviceContent: [
@@ -116,7 +125,7 @@ export const contnet = [
   },
   {
     id: 2,
-    img: "/r2.jpeg",
+    img: "/service_2.jpeg",
     title: "Assurance",
     colorTitle: "Integrity",
     serviceContent: [
@@ -249,7 +258,7 @@ export const socialLink = [
     title: "Facebook",
     link: "https://www.facebook.com",
     icon: (
-      <FaFacebook className="text-2xl lg:text-3xl xl:text-4xl text-star_color_1 " />
+      <FaFacebook className="text-2xl lg:text-3xl xl:text-4xl text-[#5456ED] " />
     ),
   },
   {
@@ -257,7 +266,7 @@ export const socialLink = [
     title: "Twitter",
     link: "https://www.twitter.com",
     icon: (
-      <FaTwitter className="text-2xl lg:text-3xl xl:text-4xl text-star_color_1 " />
+      <FaTwitter className="text-2xl lg:text-3xl xl:text-4xl text-[#5456ED] " />
     ),
   },
   {
@@ -265,7 +274,7 @@ export const socialLink = [
     title: "Whatsapp",
     link: "https://api.whatsapp.com/send?phone=919876543210",
     icon: (
-      <RiWhatsappFill className="text-2xl lg:text-3xl xl:text-4xl  text-star_color_1" />
+      <RiWhatsappFill className="text-2xl lg:text-3xl xl:text-4xl  text-[#5456ED]" />
     ),
   },
   {
@@ -273,7 +282,7 @@ export const socialLink = [
     title: "Linkedin",
     link: "https://www.instagram.com",
     icon: (
-      <FaLinkedin className="text-2xl lg:text-3xl xl:text-4xl text-star_color_1" />
+      <FaLinkedin className="text-2xl lg:text-3xl xl:text-4xl text-[#5456ED]" />
     ),
   },
   {
@@ -281,7 +290,7 @@ export const socialLink = [
     title: "Mobile",
     link: "tel:+919876543210",
     icon: (
-      <FaPhone className="text-2xl lg:text-3xl xl:text-4xl text-star_color_1 " />
+      <MdCall className="text-2xl lg:text-3xl xl:text-4xl text-[#5456ED] " />
     ),
   },
 ];

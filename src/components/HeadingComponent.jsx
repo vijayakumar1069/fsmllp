@@ -26,12 +26,14 @@ const HeadingComponent = ({
           className="inline-block "
         >
           {headingText}
-          <AnimatedGradientText
-            text={animationText}
-            className="align-middle"
-            starClassName={starclass}
-            textClassName={headTextClasses}
-          />
+          {animationText && (
+            <AnimatedGradientText
+              text={animationText}
+              className="align-middle"
+              starClassName={starclass}
+              textClassName={headTextClasses}
+            />
+          )}
         </motion.span>
       </h1>
     </div>

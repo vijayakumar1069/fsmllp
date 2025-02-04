@@ -72,7 +72,7 @@ const WhyUs = () => {
           whileInView={{ scale: 1, x: 0 }}
         >
           <Image
-            src="/r4.jpeg"
+            src="/whyUs_1.jpeg"
             alt="Our team analyzing financial data"
             fill
             className="object-cover rounded-lg"
@@ -85,7 +85,7 @@ const WhyUs = () => {
           whileInView={{ scale: 1, x: 0 }}
         >
           <Image
-            src="/r1.jpeg"
+            src="/whyUs_2.jpeg"
             alt="Client consultation meeting"
             fill
             className="object-cover rounded-lg"

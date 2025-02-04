@@ -1,15 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import * as motion from "motion/react-client";
-
-const COMPANY_IMAGES = [
-  { id: 1, src: "/r1.jpeg", alt: "Customer 1" },
-  { id: 2, src: "/r2.jpeg", alt: "Customer 2" },
-  { id: 3, src: "/r3.jpeg", alt: "Customer 3" },
-  { id: 4, src: "/r4.jpeg", alt: "Customer 4" },
-  { id: 5, src: "/r5.jpeg", alt: "Customer 5" },
-  { id: 6, src: "/r6.jpeg", alt: "Customer 6" },
-];
+import { Hero_Section_Images } from "@/utils/constants";
 
 const CustomColumnGrid = () => {
   const containerVariants = {
@@ -36,7 +28,7 @@ const CustomColumnGrid = () => {
       whileInView="visible"
       viewport={{ once: true, margin: "0px 0px -100px 0px" }}
     >
-      {COMPANY_IMAGES.map((image, index) => {
+      {Hero_Section_Images.map((image, index) => {
         if (index % 3 === 0) {
           return (
             <motion.div
@@ -77,7 +69,7 @@ const CustomColumnGrid = () => {
                   className="object-cover rounded-lg"
                 />
               </motion.div>
-              {COMPANY_IMAGES[index + 1] && (
+              {Hero_Section_Images[index + 1] && (
                 <motion.div
                   className="relative aspect-square rounded-lg shadow-md"
                   variants={itemVariants}
@@ -85,8 +77,8 @@ const CustomColumnGrid = () => {
                   whileHover={{ scale: 1.03 }}
                 >
                   <Image
-                    src={COMPANY_IMAGES[index + 1].src}
-                    alt={COMPANY_IMAGES[index + 1].alt}
+                    src={Hero_Section_Images[index + 1].src}
+                    alt={Hero_Section_Images[index + 1].alt}
                     fill
                     className="object-cover rounded-lg"
                   />

@@ -117,7 +117,7 @@ const Footer = () => {
               <motion.a
                 key={social.id}
                 href={social.link}
-                className="p-2 mr-2"
+                className="p-2 mr-2 text-[#5456ED]"
                 whileHover={{ y: -5, scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 300 }}

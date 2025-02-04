@@ -55,14 +55,11 @@ const ContactUs = () => {
             },
           }}
         >
-          <HeadingComponent
-            headingText="Premier Accounting Support for Financial"
-            animationText="Excellence"
-          />
+          <HeadingComponent headingText="Connect With Our Tax Strategy Specialists" />
         </motion.div>
 
         <motion.div
-          className="max-w-4xl mx-auto mt-2 p-8 bg-white/90 backdrop-blur-xl rounded-[2rem] shadow-2xl"
+          className="max-w-4xl mx-auto mt-4 p-8 bg-white/90 backdrop-blur-xl rounded-[2rem] shadow-2xl"
           initial={{
             y: 80,
             rotateX: -15,

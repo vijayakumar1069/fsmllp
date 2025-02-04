@@ -3,7 +3,7 @@ import LeftSideImage from "./LeftSideImage";
 import RightSideImage from "./RightSideImage";
 import ServiceKeywordBox from "./ServiceKeywordBox";
 import * as motion from "motion/react-client";
-import { contnet } from "@/utils/constants";
+import { service_Content } from "@/utils/constants";
 
 const ServiceCard = () => {
   return (
@@ -11,7 +11,7 @@ const ServiceCard = () => {
       className="flex flex-col space-y-16"
       initial={{ perspective: 1000 }}
     >
-      {contnet.map((item, index) => (
+      {service_Content.map((item, index) => (
         <motion.div
           className="relative transform-style-preserve-3d"
           key={`${index}+${item.title}`}

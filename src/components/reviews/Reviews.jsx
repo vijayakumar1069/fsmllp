@@ -10,7 +10,7 @@ const Reviews = () => {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex items-center flex-col py-6"
+      className="flex items-center flex-col py-6 mt-3"
     >
       <motion.div
         className="text-center"
