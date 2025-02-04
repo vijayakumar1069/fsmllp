@@ -1,14 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const urbanist = Urbanist({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-urbanist",
 });
 
 export const metadata = {
@@ -19,10 +17,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${urbanist.variable} relative  antialiased`}>
+        <div className="min-h-screen flex flex-col">
+          <nav className="sticky top-0 z-[1000]">
+            <Navbar />
+          </nav>
+
+          <div className="flex-1 max-w-[90%] mx-auto pt-10">
+            {" "}
+            {/* Increased padding-top */}
+            <main>{children}</main>
+          </div>
+
+          <footer>
+            <Footer />
+          </footer>
+        </div>
       </body>
     </html>
   );
