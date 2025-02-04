@@ -49,13 +49,13 @@ const Footer = () => {
           transition={{ delay: 0.2, type: "spring" }}
         >
           <motion.div
-            className="space-y-3"
+            className="space-y-3  "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
             <motion.span
-              className="block text-2xl md:text-3xl lg:text-4xl font-bold"
+              className="  text-2xl md:text-3xl lg:text-4xl font-bold"
               initial={{ y: 30 }}
               whileInView={{ y: 0 }}
               transition={{ type: "spring", stiffness: 100 }}
@@ -63,7 +63,7 @@ const Footer = () => {
               Get Expert Accounting Insights
             </motion.span>
             <motion.span
-              className="block text-2xl md:text-3xl lg:text-4xl font-bold text-star_color_2"
+              className=" ml-3 text-2xl md:text-3xl lg:text-4xl font-bold text-star_color_2"
               initial={{ scale: 0.8 }}
               whileInView={{ scale: 1 }}
               transition={{ type: "spring", delay: 0.3 }}
@@ -153,7 +153,7 @@ const Footer = () => {
           </motion.div>
 
           <motion.div
-            className="flex justify-between gap-2"
+            className="flex justify-between lg:flex-row flex-col gap-2"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1 }}

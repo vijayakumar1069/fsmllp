@@ -5,6 +5,7 @@ import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { LiaDotCircleSolid } from "react-icons/lia";
 import * as motion from "motion/react-client";
 import { whyUspoints } from "@/utils/constants";
+import Link from "next/link";
 
 const WhyUs = () => {
   return (
@@ -42,16 +43,18 @@ const WhyUs = () => {
           </p>
 
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-            <Button className="group flex gap-3 bg-gradient-to-r from-star_color_1 via-star_color_2 to-[#40BAFF] p-2 transition-all hover:scale-105">
-              <span>Discover Our Solutions</span>
-              <motion.span
-                className="transition-transform group-hover:translate-x-1"
-                animate={{ x: 0 }}
-                whileHover={{ x: 5 }}
-              >
-                <IconArrowNarrowRight size={24} stroke={3} />
-              </motion.span>
-            </Button>
+            <Link href="#reviews">
+              <Button className="group flex gap-3 bg-gradient-to-r from-star_color_1 via-star_color_2 to-[#40BAFF] p-2 transition-all hover:scale-105">
+                <span>Explore Customer Experiences</span>
+                <motion.span
+                  className="transition-transform group-hover:translate-x-1"
+                  animate={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                >
+                  <IconArrowNarrowRight size={24} stroke={3} />
+                </motion.span>
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
