@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 import { Button } from "./ui/button";
 
@@ -8,6 +9,30 @@ import * as motion from "motion/react-client";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Footer = () => {
+  const [value, setValue] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    // simulate API call
+    setTimeout(() => {
+      if (value.trim() === "") {
+        setError("Email address is required");
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+        setError("Please enter a valid email address");
+      } else {
+        setSuccess(`Thank you for subscribing to our newsletter`);
+      }
+      setValue("");
+      setLoading(false);
+    }, 2000);
+    setTimeout(() => {
+      setError(false);
+      setSuccess(false);
+    }, 5000);
+  };
   return (
     <motion.div
       className="max-w-7xl mx-auto py-10 px-5 bg-white"
@@ -52,20 +77,27 @@ const Footer = () => {
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <div className="flex items-center border-[1px] border-star_color_2 rounded-full overflow-hidden">
+            <div className="flex items-center  border-[1px] border-star_color_2 rounded-full overflow-hidden">
               <motion.input
-                type="text"
-                className="flex-1 p-2 text-black border-none focus:outline-none pl-4 pr-28"
+                type="email"
+                className="flex-1  p-2 text-black border-none focus:outline-none pl-4 pr-28"
                 placeholder="Stay compliant with our latest tax updates"
                 initial={{ width: "100%" }}
                 whileFocus={{ width: "calc(100% - 160px)" }}
                 transition={{ type: "spring", stiffness: 300 }}
+                onChange={(e) => setValue(e.target.value)}
+                value={value}
               />
-              <Button className="rounded-l-none rounded-r-full absolute right-0 h-full px-8 hover:bg-star_color_2/90 bg-star_color_2">
-                Get Free Insights
+              <Button
+                onClick={handleSubmit}
+                className="rounded-l-none rounded-r-full absolute right-0 h-full px-8 hover:bg-star_color_2/90 bg-star_color_2"
+              >
+                {loading ? "Loading..." : "Get Free Insights"}
               </Button>
             </div>
           </motion.div>
+          {success && <p className="text-green-600 mt-4 ">{success}</p>}
+          {error && <p className="text-red-600 mt-4 ">{error}</p>}
         </motion.div>
 
         {/* Right Column */}
