@@ -46,7 +46,13 @@ export function ContactForm() {
 
   const onSubmit = async (values) => {
     const result = await sendRequest(() => contactFunction(values));
-    console.log(result);
+    if (result.success) {
+      form.reset();
+    }
+    setTimeout(() => {
+      setSuccess("");
+      setError("");
+    }, 3000);
   };
 
   return (
@@ -132,12 +138,12 @@ export function ContactForm() {
           />
 
           <Button className="group flex gap-3 bg-star_color_1  p-2 lg:p-3 hover:bg-star_color_2 lg:text-lg transition-all hover:scale-105">
-            <span>Submit</span>
-            <IconArrowNarrowRight
+            <span>{loading ? "Submitting..." : "Submit"}</span>
+            {/* <IconArrowNarrowRight
               size={24}
               stroke={3}
               className="-rotate-45 transition-transform group-hover:translate-x-1"
-            />
+            /> */}
           </Button>
 
           {success && (

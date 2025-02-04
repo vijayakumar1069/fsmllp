@@ -2,7 +2,7 @@ export async function mailsendfunction(emailPayload, accessToken) {
   try {
     // 6. Send email via Microsoft Graph API
     const emailResponse = await fetch(
-      `https://graph.microsoft.com/v1.0/users/${process.env.SENDER_EMAIL}/sendMail`,
+      `https://graph.microsoft.com/v1.0/users/${process.env.ADMIN_EMAIL}/sendMail`,
       {
         method: "POST",
         headers: {
