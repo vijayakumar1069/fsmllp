@@ -7,10 +7,10 @@ const Reviews = () => {
   return (
     <motion.section
       id="reviews"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex items-center flex-col py-6 mt-3"
+      className="flex items-center flex-col py-6 pt-3 mt-3"
     >
       <motion.div
         className="text-center"
@@ -27,8 +27,8 @@ const Reviews = () => {
           Financial Confidence Through Proven Success
           <motion.span
             className="block mt-2 text-star_color_2"
-            initial={{ y: 20 }}
-            whileInView={{ y: 0 }}
+            initial={{ x: 20 }}
+            whileInView={{ x: 0 }}
             transition={{ delay: 0.3 }}
           >
             Trusted By Our Clients

@@ -59,7 +59,7 @@ const ContactUs = () => {
         </motion.div>
 
         <motion.div
-          className="max-w-3xl mx-auto mt-4 p-4 bg-white/90 backdrop-blur-xl rounded-[2rem] shadow-2xl"
+          className="max-w-md mx-auto mt-4 p-4 bg-white/90 backdrop-blur-xl rounded-[2rem] shadow-2xl"
           initial={{
             y: 80,
             rotateX: -15,
@@ -102,8 +102,8 @@ const ContactUs = () => {
             repeat: Infinity,
           }}
         />
-        {/* <motion.div
-          className="absolute -bottom-48 -right-48 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply"
+        <motion.div
+          className="absolute -bottom-48 -right-48 w-96 h-96 bg-violet-100 rounded-full mix-blend-multiply"
           animate={{
             scale: [1, 1.3, 1],
             rotate: [0, 180],
@@ -112,7 +112,7 @@ const ContactUs = () => {
             duration: 12,
             repeat: Infinity,
           }}
-        /> */}
+        />
       </motion.div>
     </motion.section>
   );

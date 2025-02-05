@@ -56,9 +56,9 @@ export function ContactForm() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-3 ">
+    <div className="max-w-xl mx-auto p-3 ">
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
           {/* Name Field */}
           <FormField
             control={form.control}
@@ -129,7 +129,7 @@ export function ContactForm() {
                   <Textarea
                     placeholder="Type your message here..."
                     {...field}
-                    className="min-h-[120px] focus-visible:ring-2 focus-visible:ring-star_color_2"
+                    className="min-h-[80px] focus-visible:ring-2 focus-visible:ring-star_color_2"
                   />
                 </FormControl>
                 <FormMessage />

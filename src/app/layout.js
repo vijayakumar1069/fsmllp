@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
             <Navbar />
           </nav>
 
-          <div className="flex-1 max-w-[90%] mx-auto pt-10">
+          <div className="flex-1 max-w-[90%] mx-auto pt-14">
             {" "}
             {/* Increased padding-top */}
             <main>{children}</main>

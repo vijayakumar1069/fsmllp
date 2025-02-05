@@ -10,14 +10,14 @@ import Link from "next/link";
 const WhyUs = () => {
   return (
     <motion.div
-      className="flex flex-col space-y-10 relative"
+      className="flex flex-col space-y-10  relative"
       id="whyus"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, type: "spring" }}
     >
       {/* Text Section */}
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="flex flex-col md:flex-row gap-6 ">
         <motion.div
           className="md:basis-5/12"
           initial={{ x: -50 }}

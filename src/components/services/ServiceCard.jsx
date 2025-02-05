@@ -8,7 +8,7 @@ import { service_Content } from "@/utils/constants";
 const ServiceCard = () => {
   return (
     <motion.div
-      className="flex flex-col space-y-16"
+      className="flex flex-col space-y-20"
       initial={{ perspective: 1000 }}
     >
       {service_Content.map((item, index) => (

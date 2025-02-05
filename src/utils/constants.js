@@ -83,7 +83,7 @@ export const service_Content = [
     id: 1,
     img: "/service_1.jpeg",
     title: "Audit",
-    colorTitle: "Precision",
+    colorTitle: "Accuracy Through Precision", // Updated to 3 words
     serviceContent: [
       {
         id: 1,
@@ -127,7 +127,7 @@ export const service_Content = [
     id: 2,
     img: "/service_2.jpeg",
     title: "Assurance",
-    colorTitle: "Integrity",
+    colorTitle: "Commitment Through Integrity", // Updated to 3 words
     serviceContent: [
       {
         id: 1,
