@@ -46,14 +46,15 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="#home" className="flex-shrink-0">
-            <Image
+            {/* <Image
               src="/logo.jpg"
               alt="Company Logo"
               width={100}
               height={100}
               className="h-16 w-16"
               priority
-            />
+            /> */}
+            <h1 className="font-bold text-3xl text-star_color_1">FSMLLP</h1>
           </Link>
 
           {/* Desktop Navigation */}

@@ -7,10 +7,7 @@ import { service_Content } from "@/utils/constants";
 
 const ServiceCard = () => {
   return (
-    <motion.div
-      className="flex flex-col space-y-20"
-      initial={{ perspective: 1000 }}
-    >
+    <motion.div className="flex flex-col space-y-20">
       {service_Content.map((item, index) => (
         <motion.div
           className="relative transform-style-preserve-3d"
@@ -57,25 +54,19 @@ const ServiceCard = () => {
           {/* <div className="absolute inset-0 border-2 border-blue-500/20 rounded-xl pointer-events-none" /> */}
         </motion.div>
       ))}
-
       <motion.div
-        initial={{ scale: 0.8, opacity: 0, rotateX: 15 }}
+        initial={{ opacity: 0, y: 10 }}
         whileInView={{
-          scale: 1,
           opacity: 1,
-          rotateX: 0,
-          transition: {
-            animation: "spring",
-            spring: { stiffness: 120 },
-            delay: 0.4,
-          },
+          y: 0,
+          transition: { duration: 0.6, ease: "easeOut" },
         }}
         animate={{
-          y: [-3, 3],
+          y: [0, -5, 0],
           transition: {
-            duration: 2.5,
+            duration: 3,
             repeat: Infinity,
-            repeatType: "reverse",
+            repeatType: "mirror",
             ease: "easeInOut",
           },
         }}
