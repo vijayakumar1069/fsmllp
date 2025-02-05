@@ -31,7 +31,7 @@ const AvatarStack = () => (
 );
 
 const TrustText = () => (
-  <div className="space-y-4 text-center flex flex-col justify-center md:text-left">
+  <div className="space-y-4 text-center flex flex-col justify-center items-center md:items-start md:text-left">
     <p className="text-base font-bold max-w-72 text-para_color md:text-lg">
       Over 15k+ Customers & Companies Trust Us.
     </p>
@@ -42,7 +42,7 @@ const TrustText = () => (
 const ExploreButton = () => {
   return (
     <Link href="#services">
-      <Button className="group flex gap-3 bg-gradient-to-r from-star_color_1 via-star_color_2 to-[#40BAFF] p-2 lg:p-3   transition-all hover:scale-105">
+      <Button className="group flex gap-3 justify-center items-center bg-gradient-to-r from-star_color_1 via-star_color_2 to-[#40BAFF] p-2 lg:p-3   transition-all hover:scale-105">
         <span>Explore more Services</span>
         <IconArrowNarrowRight
           size={24}
