@@ -46,13 +46,13 @@ const ReviewsSection = () => {
         <div className="relative grid md:grid-cols-2 gap-8 items-center">
           {/* Image Section */}
           <motion.div
-            className="relative aspect-square w-full max-w-md mx-auto md:max-w-none"
+            className="relative aspect-video w-full max-w-md mx-auto md:max-w-none"
             initial={{ x: -100, rotate: -3 }}
             whileInView={{ x: 0, rotate: 0 }}
             transition={{ type: "spring", delay: 0.2 }}
           >
             <motion.div
-              className="relative h-full w-full rounded-2xl overflow-hidden shadow-2xl"
+              className="relative h-full w-full rounded-2xl overflow-hidden aspect-video shadow-2xl"
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring" }}
             >
@@ -82,13 +82,13 @@ const ReviewsSection = () => {
           >
             {/* Animated Header */}
             <motion.div
-              className="mb-8"
+              className="mb-2"
               initial={{ y: 30 }}
               whileInView={{ y: 0 }}
               transition={{ type: "spring" }}
             >
               <motion.h2
-                className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+                className="text-xl font-bold tracking-tight sm:text-2xl mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
@@ -120,7 +120,7 @@ const ReviewsSection = () => {
                 transition={{ duration: 0.4 }}
               >
                 <motion.p
-                  className="text-lg text-para_color mb-6"
+                  className=" text-para_color mb-6"
                   whileHover={{ scale: 1.02 }}
                 >
                   "{reviewsContent[currentReview].content}"

@@ -31,7 +31,7 @@ const PercentageComponent = ({ item }) => {
 
   return (
     <div className="flex flex-col space-y-3 w-48">
-      <h1 className="font-extrabold text-black text-4xl xs:text-3xl sm:text-5xl lg:text-6xl">
+      <h1 className="font-extrabold text-black text-3xl xs:text-2xl sm:text-4xl lg:text-5xl">
         {isInteger ? Math.floor(count) : count.toFixed(1)}
         {item.symbol}
       </h1>

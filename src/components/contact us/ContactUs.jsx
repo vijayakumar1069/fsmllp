@@ -7,7 +7,7 @@ const ContactUs = () => {
   return (
     <motion.section
       id="contact"
-      className="relative  overflow-hidden py-10"
+      className="relative  overflow-hidden pt-5 pb-10 "
       initial={{ opacity: 0, perspective: 1000 }}
       whileInView={{
         opacity: 1,
@@ -21,7 +21,7 @@ const ContactUs = () => {
     >
       {/* Animated gradient background */}
       <motion.div
-        className="absolute inset-0 z-0 "
+        className="absolute inset-0 z-0 rounded-2xl "
         animate={{
           background: [
             "linear-gradient(45deg, #f3f4f6 0%, #e5e7eb 100%)",
@@ -38,7 +38,7 @@ const ContactUs = () => {
 
       <motion.div className="relative z-10 ">
         <motion.div
-          className="flex justify-center  items-center"
+          className="flex justify-center  items-center px-3 lg:px-0"
           initial={{ y: 50, opacity: 0, scale: 0.95 }}
           whileInView={{
             y: 0,
@@ -59,7 +59,7 @@ const ContactUs = () => {
         </motion.div>
 
         <motion.div
-          className="max-w-4xl mx-auto mt-4 p-8 bg-white/90 backdrop-blur-xl rounded-[2rem] shadow-2xl"
+          className="max-w-3xl mx-auto mt-4 p-4 bg-white/90 backdrop-blur-xl rounded-[2rem] shadow-2xl"
           initial={{
             y: 80,
             rotateX: -15,

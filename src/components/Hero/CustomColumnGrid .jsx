@@ -33,7 +33,7 @@ const CustomColumnGrid = () => {
           return (
             <motion.div
               key={image.id}
-              className="col-span-1 relative rounded-lg shadow-md"
+              className="col-span-1 relative rounded-lg shadow-md max-h-[200px] sm:max-h-[250px] md:max-h-[300px] lg:max-h-[350px]"
               variants={itemVariants}
               transition={{ type: "spring", stiffness: 100 }}
               whileHover={{ scale: 1.03 }}
@@ -53,11 +53,11 @@ const CustomColumnGrid = () => {
           return (
             <motion.div
               key={image.id}
-              className="col-span-1 flex flex-col gap-4"
+              className="col-span-1 flex flex-col space-y-4"
               variants={containerVariants}
             >
               <motion.div
-                className="relative aspect-square rounded-lg shadow-md"
+                className="relative aspect-square rounded-lg shadow-md max-h-[90px] sm:max-h-[115px] md:max-h-[140px] lg:max-h-[165px]"
                 variants={itemVariants}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.03 }}
@@ -71,7 +71,7 @@ const CustomColumnGrid = () => {
               </motion.div>
               {Hero_Section_Images[index + 1] && (
                 <motion.div
-                  className="relative aspect-square rounded-lg shadow-md"
+                  className="relative aspect-square max-h-[90px] sm:max-h-[115px] md:max-h-[140px] lg:max-h-[165px] rounded-lg shadow-md"
                   variants={itemVariants}
                   transition={{ delay: (index + 1) * 0.1 }}
                   whileHover={{ scale: 1.03 }}

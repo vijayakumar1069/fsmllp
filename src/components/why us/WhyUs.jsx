@@ -112,7 +112,7 @@ const WhyUs = () => {
             <div>
               <LiaDotCircleSolid size={50} stroke="#000" />
             </div>
-            <h3 className="text-lg">{usp.title}</h3>
+            <h3 className="">{usp.title}</h3>
           </motion.div>
         ))}
       </motion.div>

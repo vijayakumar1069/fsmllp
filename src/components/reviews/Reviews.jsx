@@ -19,7 +19,7 @@ const Reviews = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <motion.h1
-          className="text-xl lg:text-3xl xl:text-5xl font-bold"
+          className="text-xl lg:text-2xl xl:text-3xl font-bold"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.4 }}

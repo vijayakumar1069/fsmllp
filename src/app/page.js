@@ -8,7 +8,7 @@ import WhyUs from "@/components/why us/WhyUs";
 
 export default function Home() {
   return (
-    <div className="flex flex-col space-y-20 max-w-7xl mx-auto">
+    <div className="flex flex-col space-y-10 max-w-7xl mx-auto">
       <HeroSection />
       <About />
       <Service />

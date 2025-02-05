@@ -18,7 +18,7 @@ const Hero_Top = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.4 }}
-          className="mt-4  lg:w-1/2 w-full text-para_color text-lg md:text-xl"
+          className="mt-2  lg:w-1/2 w-full text-para_color text-lg "
         >
           Partner with Fareed Sheik LLP, your strategic ally in scaling success.
           As a boutique full-service CPA firm, we deliver precision accounting,
