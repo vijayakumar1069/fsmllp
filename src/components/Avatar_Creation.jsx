@@ -13,7 +13,11 @@ const Avatar_Creation = ({ item, index }) => {
         transition-all duration-300 hover:z-30 hover:scale-110
       `}
     >
-      <AvatarImage src={src} alt={alt} className="object-cover object-center" />
+      <AvatarImage
+        src={src}
+        alt={alt}
+        className="object-cover object-center "
+      />
       <AvatarFallback className="text-xs md:text-sm">{alt}</AvatarFallback>
     </Avatar>
   );

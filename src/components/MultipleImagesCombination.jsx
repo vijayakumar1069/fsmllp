@@ -42,7 +42,7 @@ const TrustText = () => (
 const ExploreButton = () => {
   return (
     <Link href="#services">
-      <Button className="group flex gap-3 bg-gradient-to-r from-star_color_1 via-star_color_2 to-[#40BAFF] p-2 lg:p-3  lg:text-lg transition-all hover:scale-105">
+      <Button className="group flex gap-3 bg-gradient-to-r from-star_color_1 via-star_color_2 to-[#40BAFF] p-2 lg:p-3   transition-all hover:scale-105">
         <span>Explore more Services</span>
         <IconArrowNarrowRight
           size={24}
