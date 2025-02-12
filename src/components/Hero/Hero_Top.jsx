@@ -20,10 +20,10 @@ const Hero_Top = () => {
           transition={{ delay: 0.2, duration: 0.4 }}
           className="mt-2  lg:w-1/2 w-full text-para_color text-lg "
         >
-          Partner with Fareed Sheik LLP, your strategic ally in scaling success.
-          As a boutique full-service CPA firm, we deliver precision accounting,
-          tax expertise, and assurance solutions tailored to your unique goals.
-          From startups to established enterprises, our certified professionals
+          Partner with FSMLLP, your strategic ally in scaling success. As a
+          boutique full-service CPA firm, we deliver precision accounting, tax
+          expertise, and assurance solutions tailored to your unique goals. From
+          startups to established enterprises, our certified professionals
           empower your growth with clarity, compliance, and visionary
           strategy—because your transformation is our mission.
         </motion.p>

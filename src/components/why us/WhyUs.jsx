@@ -25,7 +25,7 @@ const WhyUs = () => {
           transition={{ type: "spring", stiffness: 100 }}
         >
           <h1 className="text-2xl lg:text-3xl xl:text-4xl max-w-52 font-bold">
-            Why Choose Fareed Sheik LLP?
+            Why Choose FSMLLP?
           </h1>
         </motion.div>
 

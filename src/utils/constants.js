@@ -82,8 +82,8 @@ export const service_Content = [
   {
     id: 1,
     img: "/service_1.jpeg",
-    title: "Audit",
-    colorTitle: "Accuracy Through Precision", // Updated to 3 words
+    title: "Internal Audit",
+    colorTitle: "Strength in Strategic Precision", // Updated to 3 words
     serviceContent: [
       {
         id: 1,
@@ -126,8 +126,8 @@ export const service_Content = [
   {
     id: 2,
     img: "/service_2.jpeg",
-    title: "Assurance",
-    colorTitle: "Commitment Through Integrity", // Updated to 3 words
+    title: "Payroll Services",
+    colorTitle: "Efficiency Through Precision", // Updated for clarity and impact
     serviceContent: [
       {
         id: 1,
@@ -137,9 +137,9 @@ export const service_Content = [
             className="rounded-full bg-star_color_1 text-white p-1"
           />
         ),
-        serviceContentTitle: "Financial Verification",
+        serviceContentTitle: "Seamless Payroll Processing",
         serviceContentText:
-          "CSAE 3416 special purpose audits for government funding compliance and investor readiness",
+          "Ensure timely and accurate payroll with biweekly, semi-monthly, or monthly processing.",
       },
       {
         id: 2,
@@ -149,9 +149,9 @@ export const service_Content = [
             className="rounded-full bg-star_color_1 text-white p-1"
           />
         ),
-        serviceContentTitle: "Regulatory Audits",
+        serviceContentTitle: "Direct Deposit & Paystubs",
         serviceContentText:
-          "TICO trust accounting compliance and MTCC reserve fund studies for condominium corporations",
+          "Securely transfer employee wages via direct deposit and generate detailed electronic paystubs.",
       },
       {
         id: 3,
@@ -161,9 +161,9 @@ export const service_Content = [
             className="rounded-full bg-star_color_1 text-white p-1"
           />
         ),
-        serviceContentTitle: "Non-Profit Assurance",
+        serviceContentTitle: "T4 & ROE Management",
         serviceContentText:
-          "Charity Directorate-compliant audits that maintain donor confidence and CRA standing",
+          "Issue T4 slips, file them online with the CRA, and generate Records of Employment for departing staff.",
       },
     ],
   },
@@ -173,10 +173,11 @@ export const aboutContents = [
   {
     id: 1,
     icon: <IconReceiptTax color="#5456ED" size={55} />,
-    title: "Tax Precision Partners",
+    title: "Expert Tax Solutions",
     description:
-      "Full-service tax preparation and strategic planning for businesses and individuals, ensuring compliance while maximizing your deductions and savings.",
+      "Providing tailored tax strategies for individuals and businesses, including corporate and personal filings, CRA audit support, back tax resolution, and specialized returns such as trusts and partnerships.",
   },
+
   {
     id: 2,
     icon: <IconShieldCheck color="#5456ED" size={55} />,
@@ -218,37 +219,37 @@ export const reviewsContent = [
   {
     id: 1,
     author: "Emma Thompson",
-    role: "Marketing Director",
+    role: "CFO, Tech Solutions Inc.",
     content:
-      "The level of creativity and attention to detail is outstanding! Our web traffic has increased by 150% since implementing their content strategy. The team's ability to capture our brand voice while maintaining SEO best practices has been invaluable to our digital presence.",
+      "FSMLLP's expertise in corporate tax planning and compliance has been invaluable. Their strategic approach not only optimized our tax position but also ensured full regulatory compliance. A truly professional and detail-oriented team!",
   },
   {
     id: 2,
     author: "James Chen",
-    role: "Startup Founder",
+    role: "Founder, Chen Enterprises",
     content:
-      "Quick, efficient, and remarkably professional. They transformed our complex technical documentation into clear, user-friendly content that our customers love.",
+      "The FSMLLP team streamlined our financial reporting and helped us navigate complex audits seamlessly. Their proactive guidance has been instrumental in scaling our business with confidence.",
   },
   {
     id: 3,
     author: "Sarah Williams",
-    role: "E-commerce Manager",
+    role: "E-commerce Business Owner",
     content:
-      "Working with this team has been a game-changer for our e-commerce platform. Their product descriptions are engaging, their email campaigns have doubled our open rates, and their blog content has established us as industry leaders. The ROI has been phenomenal - our conversion rate is up 75% since we started working together.",
+      "Working with FSMLLP has transformed our financial operations. From bookkeeping to tax optimization, their insights have significantly improved our cash flow management and long-term financial planning.",
   },
   {
     id: 4,
     author: "Michael Rodriguez",
-    role: "Content Strategist",
+    role: "Investment Advisor",
     content:
-      "What sets them apart is their versatility. From white papers to social media posts, everything is meticulously researched and perfectly tailored to the target audience. Their ability to maintain consistency across different platforms while adapting to each channel's unique requirements is remarkable.",
+      "FSMLLP stands out for their precision and strategic foresight. Their tax-saving strategies and financial advisory services have greatly benefited our high-net-worth clients and corporate partners.",
   },
   {
     id: 5,
     author: "Lisa Anderson",
-    role: "Small Business Owner",
+    role: "Managing Director, Anderson Legal Firm",
     content:
-      "As a small business owner, I was hesitant about investing in professional content services. Now I wish I had done it sooner. They didn't just write content; they developed a voice for my brand that resonates with my customers and sets us apart from competitors. The personal attention and customized approach made all the difference.",
+      "FSMLLP’s expertise in trust and estate planning has been invaluable for our firm and clients. Their meticulous approach and deep industry knowledge make them a trusted partner in financial planning.",
   },
 ];
 
